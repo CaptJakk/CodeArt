@@ -1,1 +1,1 @@
-web: PORT=80 CodeArt
+web: PORT=8080 CodeArt
