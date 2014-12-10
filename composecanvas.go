@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
-import "net/http"
-import "os"
+import (
+	"fmt"
+	"html/template"
+	"net/http"
+	"os"
+)
 
 func main() {
-	http.HandleFunc("/", hello)
+	http.HandleFunc("/", home)
 	fmt.Println("listening...")
 	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 	if err != nil {
@@ -13,7 +16,7 @@ func main() {
 	}
 }
 
-func hello(res http.ResponseWriter, req *http.Request) {
+func home(res http.ResponseWriter, req *http.Request) {
 	fmt.Fprintln(res, "hello, world")
 	fmt.Println("response sent")
 }
