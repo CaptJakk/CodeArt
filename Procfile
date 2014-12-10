@@ -1,1 +1,1 @@
-web: CodeArt
+web: ComposeCanvas 
