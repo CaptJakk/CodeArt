@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/CaptJakk/CodeArt",
+	"ImportPath": "github.com/CaptJakk/ComposeCanvas",
 	"GoVersion": "go1.3.3",
 	"Deps": []
 }
