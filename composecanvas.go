@@ -17,6 +17,6 @@ func main() {
 }
 
 func home(res http.ResponseWriter, req *http.Request) {
-	fmt.Fprintln(res, "hello, world")
-	fmt.Println("response sent")
+	t, _ := template.ParseFiles("templates/index.html")
+	t.Execute(res, nil)
 }
