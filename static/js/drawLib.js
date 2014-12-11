@@ -1,13 +1,13 @@
 var drawRectangle = (function(x, y, width, height, color) {
 	
 	var ctx= document.getElementById("myCanvas").getContext("2d");
-	ctx.fillStyle="#"+color;
+	ctx.fillStyle=color;
 	ctx.fillRect(x,y,width,height);
 });
 
 var colorPix = (function(x, y, color) {
 	var ctx= document.getElementById("myCanvas").getContext("2d")
-	ctx.fillStyle="#"+color;
+	ctx.fillStyle=color;
 	ctx.fillRect(x,y,1,1);
 });
 
